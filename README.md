@@ -93,7 +93,7 @@ You are now ready to start working on the RERS problems.
 
 ## The RERS problems
 
-We are going to learn models for the RERS 2016 or 2017 programs. These programs are not included in the sources, but you should have already seen them in previous assignments. For this assignment, we are going to use the binaries compiled from the C sources (although the Java sources should also work). Learning is a black-box technique, after all. Instead of the stderr used for AFL and KLEE, we are going to use only stdout for output. Furthermore, LearnLib assumes that the SUT (software under test) is a reactive system that always produces some output for a given input. Consequently, the SUT should not crash because then LearnLib will wait infinitely for the output. Make sure the RERS code is as follows:
+We are going to learn models for the RERS Reachability programs. These programs are not included in the sources, but you should have already seen them in previous assignments. For this assignment, we are going to use the binaries compiled from the C sources (although the Java sources should also work). Learning is a black-box technique, after all. Instead of the stderr used for AFL and KLEE, we are going to use only stdout for output. Furthermore, LearnLib assumes that the SUT (software under test) is a reactive system that always produces some output for a given input. Consequently, the SUT should not crash because then LearnLib will wait infinitely for the output. Make sure the RERS code is as follows:
 
 ```C
 void __VERIFIER_error(int i){
